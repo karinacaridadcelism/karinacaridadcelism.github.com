@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fredoka:wght@300..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+*{padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;}
+		
+header, nav, main, footer{ /*width: 960px;*/
+	width: 100%;
+padding: 20px; 
+margin-left: auto;
+margin-right: auto;
+font-family: "Playwrite DE Grund", cursive;}
+
+header{height:auto;
+background-color: #5f3e75;	
+/*background-color:#CE7095;*/
+color: #ded3fd;}
+
+nav{height: auto;
+background-color:#ca9ae4;
+color: #995A7F;}
+
+nav ul{list-style-type: none;
+		text-align: center;}
+
+	nav ul li{width: 10%;
+		background-color: #f6e3ff;
+		/*color: #5a4e3c*/;
+		margin-bottom: 10px;
+		padding: 10px;
+		text-align: center;
+		border-width: 3px;
+		border-color: #5f3e75;
+		border-style: solid;
+		display: inline-block;
+		border-radius: 20px;
+	font-family: "Fredoka", sans-serif;}	
+
+nav ul li a{color: #5f3e75;
+text-decoration: none;
+}
+
+	nav ul li:hover{background-color: #5f3e75;
+		width: auto;}
+
+	nav ul li a:hover{
+		color: #f7f1e1;
+		font-weight: bold;
+		font-size: 14px;}	
+
+main nav ul li{ width: 20%; }
+
+a{text-decoration: none;}	
+
+	section a {color:#855e6e;
+		font-weight: bolder;}
+
+	section a:visited{color: #794a80;}	
+
+	section a:hover{color: #ca9ae4;}	
+
+ul,ol,dl,dd{padding-left: 20px;}
+	dl,dd{padding-bottom: 15px;
+		padding-top: 15px;}	
+	dt{font-weight: bold;}			
+
+main{background-color:#794a80;
+height: auto;
+padding: 80px;}
+
+h1,h5{text-align:center;}
+
+h1{font-family: "Amatic SC", sans-serif;
+font-size: 60pt;}
+
+section{/*width: 800px;*/
+width: 80%;	
+height: auto;
+background-color: #ded3fd;
+color: #5f3e75;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+border-radius: 40px;}
+
+img{width: 320px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#imagen2{width: 400px;
+float: right;
+margin-left: 20px;
+margin-bottom: 3px;}
+
+#imagen3{width: 400px;
+float: left;
+margin-right: 20px;}
+
+#imagen4{width: 180px;
+border-radius: 40px;	
+float: right;
+margin-left: 20px;
+margin-bottom: 3px;}
+
+#icono{width: 60px;
+margin-top: 10px;}
+
+h2,h3,p{margin-bottom: 15px;
+font-family: "Fredoka", sans-serif;}
+
+p{font-family: "Playwrite DE Grund", cursive;}
+
+main nav{width: 80%;
+padding: 30px;
+border-radius: 40px;}
+
+
+#fondo_section{
+	background-image:url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;}
+
+/*cambiar color de una sección teniendo de background una imagen
+#fondo_section p, #fondo_section h2{color: #00000;}	*/
+
+#filtros_imagen{text-align: center;}
+
+#filtros_imagen img {display: inline-block;
+width: 30%;
+height: auto;
+padding: 10px;}
+
+#img1{filter: brightness(130%);}
+
+#img2{filter: contrast(50%);}
+
+#img3{filter: grayscale(100%);}
+
+#img4{filter: invert(100%);}
+
+#img5{filter: opacity(0.5);}
+
+#img6{filter: sepia(100%);}
+
+#img7{filter: saturate(150%);}
+
+#img8{filter: blur(3px);}
+
+#img9{filter: drop-shadow(5px 5px 10px gray);}
+
+#img10{filter: saturate(200%) drop-shadow(5px 5px 10px gray);}
+
+#img11{filter: hue-rotate(120deg);}
+
+iframe, audio{display: block;
+	margin: 0 auto;}
+
+footer{height: auto;
+background-color: #5f3e75;
+color: #ded3fd;}

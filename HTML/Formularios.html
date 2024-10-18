@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios en HTML</title>
+<link rel="stylesheet" type="text/css" href="../CSS/style page.css"></link>
+<style type="text/css">
+	form{
+		width: 50%;
+		height: auto;
+		padding: 30px;
+		background-color: #794a80;
+		color: #ded3fd;
+		margin: 0 auto;
+	}
+	
+	label{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	label, input{
+		display: block;
+		margin-left: 10px;
+	}
+	
+	input[type=text], input[type=password], input[type=number], input[type=date], input[type=email], input[type=url], input[type=file], input[type=month], select{
+		width: 90%;
+		color: #794a80;
+		padding: 8px;
+		font-weight: bold;
+		border: 3px solid #5f3e75;
+		border-radius: 10px;
+		background-color: #ded3fd;
+		align-items: flex-start;
+	}
+	
+	select{
+		margin-left: 10px;
+	}
+	
+	input[type=submit]{
+		width: 30%;
+		background-color: #ded3fd;
+		padding: 10px;
+		margin: 20px auto;
+		border-radius: 10px;
+		color:#794a80;
+		border-weight: bolder;
+	}
+	
+	input[type=color]{
+		border-color: #5f3e75;
+		border-radius: 10px;
+		border-weight: bolder;
+	}
+	
+	input[type=text]:focus{
+		background-color:floralwhite;
+		border:3px solid #CE7095;
+	}
+	
+</style>
+</head> 
+
+<body>
+<header>
+	<h1>Formularios en HTML</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="../index.html">Sobre mi</a></li>
+		<li><a href="listas.html">Gustos</a></li>
+		<li><a href="Enlaces.html">Portafolio</a></li>
+		<li><a href="Imagenes.html">Lugares</a></li>
+		<li><a href="Audio.html">Música</a></li>
+		<li><a href="Video.html">Películas</a></li>
+		<li><a href="Tablas.html">Amigos</a></li>
+		<li><a href="Formularios.html">Formulario</a></li>
+	</ul>
+</nav>
+<main>
+  <section>
+    <h2 id="f1">Formulario usuario 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id tempora laudantium at, officiis labore repellendus earum minima, maiores explicabo eum molestias nesciunt, nemo ad vel quos, aut! Sequi rem, consequuntur. Minima fugit eos itaque a nihil eligendi, placeat impedit vitae natus aut id blanditiis corrupti, suscipit. Laboriosam quasi repellat officiis eum debitis recusandae est, voluptates eius unde! Nisi blanditiis praesentium laborum nemo, aspernatur doloremque ut quibusdam ea, soluta, libero ratione earum est a ex iste eveniet facilis placeat dolor totam temporibus laudantium repudiandae! Nulla quidem, reprehenderit optio corporis obcaecati omnis possimus expedita quaerat porro maxime culpa, officiis voluptates minus explicabo!</p>
+	  <form action="" method="get">
+		  <label id="">Nombre:</label>
+		  <input type="text" id="nombre" name="nombre">
+		  <label id="">Contraseña:</label>
+		  <input type="password" id="contraseña">
+		  <input type="submit" value="Enviar">
+	  </form>
+	  <a href="#menu_interno"><img id="icono" src="../medios/IMAGENES/ICO/icono2.ico" alt="icono de flechas hacia abajo"></a>
+  </section>
+  <section>
+    <h2 id="f2">Formulario 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus distinctio eaque assumenda praesentium ipsam molestias libero natus, sunt perspiciatis officiis mollitia fuga impedit fugit. Veritatis quasi ad, in nesciunt architecto possimus tempora labore rerum officia blanditiis, id voluptas iusto magnam dicta impedit accusamus. Numquam similique eum officiis quasi autem nihil laudantium quas eveniet eligendi asperiores necessitatibus, voluptas, perspiciatis temporibus repellendus iste, alias ipsum. Dolores perferendis commodi recusandae id non est magni quos nobis possimus, dolorum obcaecati, corrupti. Deserunt provident fuga repellendus dolore aliquam reprehenderit dolores vel nostrum non, optio est saepe sint quo natus illum repellat praesentium ab. Quis.</p>
+    <form id="form1" name="form1" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="edad">Edad:</label>
+      <input type="number" name="edad" id="edad" min="18" max="90">
+		<label for="estado">Estado:</label>
+		<select id="estado" name="estado">
+	    <option value="Puebla">Puebla</option>
+	    <option value="Jalisco">Jalisco</option>
+	    <option value="Colima">Colima</option>
+	    <option value="Durango">Monterrey</option>
+		<option value="Durango">Tlaxcala</option>
+		<option value="Durango">Oaxaca</option>	
+      	</select>	
+      <input type="submit" value="Enviar">
+	 </form>	
+	 <a href="#menu_interno"><img id="icono" src="../medios/IMAGENES/ICO/icono2.ico" alt="icono de flechas hacia abajo"></a>
+  </section>
+  <section>
+    <h2 id="f3">Formulario 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus exercitationem porro architecto alias quasi tempore consequatur maxime nihil, at, adipisci velit commodi vero cumque cupiditate, perspiciatis et rerum eum, minus libero. Consequuntur aperiam libero debitis sit tenetur, ex, rem quibusdam alias quisquam culpa cupiditate porro omnis. Cupiditate, quia hic eum, distinctio nostrum error nobis id ducimus blanditiis recusandae quam. Minus veniam aliquid est. Id doloribus eligendi, dignissimos accusantium voluptates qui neque porro explicabo, recusandae tenetur vitae dolores corporis molestiae? Dolorem odio similique facilis sint laboriosam totam asperiores id nemo reiciendis eveniet ad doloremque, delectus recusandae deleniti, quidem amet ipsa.</p>
+	<form id="form2" name="form2" method="post">
+		<label for="textfield">Nombre:</label>
+		<input type="text" name="nombre" id="nombre">
+		<label for="textfield">Género:</label>
+		<table width="200" style="width: 40%;">
+        	<tr>
+				<td><input type="radio" name="Genero" value="fem" id="Genero_0"></td>
+				<td><label>Femenino</label></td>
+        	</tr>
+        	<tr>
+          		<td><input type="radio" name="Genero" value="masc" id="Genero_1"></td>
+				<td><label>Masculino</label></td>
+        	</tr>
+        	<tr>
+          		<td><input type="radio" name="Genero" value="otro" id="Genero_2"></td>
+				<td><label>Otro</label></td>
+        	</tr>
+		</table>
+		<label for="musica">¿Cuál es tu género musical favorito?</label>
+		<p>
+	  		<input style="display: inline-block;" type="checkbox" name="musica" value="pop" id="musica_0">
+			<label style="display: inline-block;">Pop</label>
+	  		<br>
+	  		<input style="display: inline-block;" type="checkbox" name="musica" value="electronica" id="musica_1">
+			<label style="display: inline-block;">Electrónica</label>
+	  		<br>
+			<input style="display: inline-block;" type="checkbox" name="musica" value="jazz" id="musica_2">
+			<label style="display: inline-block;">Jazz</label>
+	  		<br>
+	  		<input style="display: inline-block;" type="checkbox" name="musica" value="clasica" id="musica_3">
+			<label style="display: inline-block;">Clásica</label>
+			<br>
+			<input style="display: inline-block;" type="checkbox" name="musica" value="rap" id="musica_4">
+			<label style="display: inline-block;">Rap</label>
+			<br>
+			<input style="display: inline-block;" type="checkbox" name="musica" value="regueton" id="musica_5">
+			<label style="display: inline-block;">Reguetón</label>
+			<br>
+			</p>
+		<input type="submit" value="Enviar">
+	</form>
+	 <a href="#menu_interno"><img id="icono" src="../medios/IMAGENES/ICO/icono2.ico" alt="icono de flechas hacia abajo"></a>
+  </section>
+  <section>
+    <h2 id="f4">Entrevista a mi ídola</h2>
+    <p>	Emma Watson es una de las figuras más influyentes de su generación, conocida no solo por su destacada carrera como actriz, sino también por su incansable activismo a favor de la igualdad de género y los derechos humanos. Desde su interpretación como Hermione Granger en la saga de Harry Potter hasta su papel como Embajadora de Buena Voluntad de ONU Mujeres, Emma ha logrado utilizar su plataforma para impulsar cambios significativos a nivel global.</p>
+	<p>Acompáñanos en esta pequeña entrevista acerca de la vida y la carrera de esta talentosa mujer que continúa inspirando a millones alrededor del mundo.</p>
+    <form action="" method="post">
+        
+        <!-- Pregunta 1 -->
+        <label for="name">¿Cuál es tu nombre completo?</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Pregunta 2 -->
+		<label for="dob">¿Cuál es tu fecha de nacimiento?</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <!-- Pregunta 3 -->
+        <label for="email">¿Cuál es tu correo electrónico?</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <!-- Pregunta 4 -->
+        <label for="movies">¿En cuántas películas has participado?</label>
+        <input type="number" id="movies" name="movies" min="0"><br><br>
+        
+        <!-- Pregunta 5 -->
+        <label for="website">¿Tienes una página web oficial?</label>
+        <input type="url" id="website" name="website" placeholder="https://ejemplo.com"><br><br>
+        
+        <!-- Pregunta 6 -->
+        <label for="agree">¿Consideras que tu activismo ha impactado a muchas personas?</label>
+        <input style="display: inline-block;" type="radio" id="si" name="respuesta" value="si">
+        <label style="display: inline-block;" for="si">Si</label><br>
+		<input style="display: inline-block;" type="radio" id="no" name="respuesta" value="no">
+        <label style="display: inline-block;" for="no">No</label><br><br><br>
+        
+        <!-- Pregunta 7 -->
+        <p>¿A parte de la saga de Harry Potter, en qué otra película amaste participar?</p>
+        <input style="display: inline-block;" type="checkbox" id="op1" name="movie" value="op1">
+        <label style="display: inline-block;" for="op1">Las Ventajas de ser Invisible</label><br>
+        <input style="display: inline-block;" type="checkbox" id="op2" name="movie" value="op2">
+        <label style="display: inline-block;" for="op2">Noé</label><br>
+		<input style="display: inline-block;" type="checkbox" id="op3" name="movie" value="op3">
+        <label style="display: inline-block;" for="op3">La Bella y la Bestia</label><br>
+        <input style="display: inline-block;" type="checkbox" id="op4" name="movie" value="op4">
+        <label style="display: inline-block;" for="op4">Mujercitas</label><br><br>
+        
+        <!-- Pregunta 8 -->
+        <label for="profile-pic">¿Podrías subir una foto del momento más feliz de tu vida?</label>
+        <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br><br>
+        
+		<!-- Pregunta 9 -->
+		<label for="favcolor">¿Cuál es tu color favorito?</label>
+  		<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+		
+        <!-- Pregunta 10 -->
+        <label for="estacion">¿Cuál es tu estación del año favorita?</label>
+        <select id="estacion" name="estacion">
+            <option value="primavera">Primavera</option>
+            <option value="verano">Verano</option>
+            <option value="otoño">Otoño</option>
+			<option value="invierno">Invierno</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <nav id="menu_interno">
+			<ul>
+				<li><a href="#f1">Formulario 1</a></li>
+				<li><a href="#f2">Formulario 2</a></li>
+				<li><a href="#f3">Formulario 3</a></li>
+				<li><a href="#f4">Entrevista</a></li>
+			</ul>
+		</nav>
+</main>
+<footer>
+  <h5>Elaborado por Celis Mendieta Karina Caridad</h5>
+</footer>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/style page.css"></link>
+	<title>Tablas en HTML</title>
+	
+	<style type="text/css">
+		#tabla_uno{text-align: center;
+			margin: 0 auto;
+			color: #5f3e75;
+			width: 100%;
+			border-style:solid;
+			border-color: #5f3e75;
+			border-width: 5px;
+			border-spacing: 10px;}
+
+		#tabla_uno th{background-color: #5f3e75;
+			color: #F7F1E1;}
+
+		#tabla_uno td{background-color: #ca9ae4;
+			text-align: left;
+			border-style: solid;
+			border-color:  #5f3e75;
+			border-width: 3px;
+			border-radius: 5px;
+			margin: 10px;}	
+
+		#tabla_2 th{color: #ded3fd;
+		}
+
+		#tabla_2 td{color: #5f3e75;
+			height: 50px;
+			padding: 5px;}	
+
+		.celda_centrado{
+			text-align: center;
+			padding: 0px;
+			background-color: #995A7F;
+			color: #ded3fd;
+		}	
+
+		.tabla_dos{width: 700px;
+			border-collapse: collapse;
+			border-color:#5f3e75;
+			border-style: solid;
+			margin: 0 auto;}
+
+		.tabla_dos td{width: 150px;
+			border-color: #5f3e75;
+			border-style: dashed;}
+
+		.tabla_dos th{background-color:#794a80;}	
+
+		.tabla_dos td{background-color:#ca9ae4;}
+
+		#tabla_zebra{
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			color: #F2D5E5;
+			border-style:none;
+			border-color: #995A7F;
+			border-width: 5px;
+			border-spacing: 10px;
+		}
+
+		#tabla_zebra td, #tabla_zebra th {border-radius: 5px;
+			padding: 5px;}
+
+		#tabla_zebra tbody tr:nth-child(even){background-color: #794a80; color: #ded3fd;}
+
+		#tabla_zebra tbody tr:nth-child(odd){background-color: #ca9ae4; color: #794a80;}
+
+		#tabla_zebra thead tr{background-color: #5f3e75; color: #ded3fd;
+		}
+
+		.tabla_hover {
+		width: 90%;
+		margin: auto;}
+
+	.tabla_hover  tr:hover {
+		background-color: violet;}
+
+	.tabla_hover thead tr {
+		background-color: #794a80;
+		padding: 10px;}
+
+	.tabla_hover th{
+		background-color: #794a80;
+		padding: 10px;
+		color: #ca9ae4;}
+
+	.tabla_hover tbody tr {
+		background-color: #ca9ae4;
+		color: #5f3e75;}
+
+	.tabla_hover  tr td {
+		padding: 10px;
+		text-align: center;}
+		
+	</style>
+
+</head>
+
+<body>
+<header>
+	<h1>¿QUIÉNES SON MIS AMIGOS?</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="../index.html">Sobre mi</a></li>
+		<li><a href="listas.html">Gustos</a></li>
+		<li><a href="Enlaces.html">Portafolio</a></li>
+		<li><a href="Imagenes.html">Lugares</a></li>
+		<li><a href="Audio.html">Música</a></li>
+		<li><a href="Video.html">Películas</a></li>
+		<li><a href="Tablas.html">Amigos</a></li>
+		<li><a href="Formularios.html">Formulario</a></li>
+	</ul>
+</nav>
+<main>
+	<section style="overflow: auto;">
+		<h2 id="amigos">Amigos</h2>
+		<p>La siguiente tabla presenta una descripción general de mis amigos, destacando aspectos clave como sus nombres, edades, dónde los conocí y el tiempo que llevamos de amistad.</p>
+		<table border="1" id="tabla_uno">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Cumpleaños</th>
+					<th style="text-align: center;">Edad</th>
+					<th>Donde la/lo conocí</th>
+					<th>Años de amistad</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Daniel</td>
+					<td>26 mayo</td>
+					<td style="text-align: center;">21</td>
+					<td>Preparatoria</td>
+					<td>5 años</td>
+				</tr>
+				<tr>
+					<td>Adriana</td>
+					<td>04 noviembre</td>
+					<td style="text-align: center;">20</td>
+					<td>Preparatoria</td>
+					<td>4 años y medio</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>08 mayo</td>
+					<td style="text-align: center;">24</td>
+					<td>Universidad</td>
+					<td>3 años</td>
+				</tr>
+				<tr>
+					<td>Carla</td>
+					<td>05 enero</td>
+					<td style="text-align: center;">21</td>
+					<td>Universidad</td>
+					<td>3 años</td>
+				</tr>
+				<tr>
+					<td>Dianet</td>
+					<td>19 mayo</td>
+					<td style="text-align: center;">21</td>
+					<td>Universidad</td>
+					<td>2 años y medio</td>
+				</tr>
+				<tr>
+					<td>Brenda</td>
+					<td>20 septiembre</td>
+					<td style="text-align: center;">21</td>
+					<td>Universidad</td>
+					<td>2 años y medio</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+	<a href="#menu_interno"><img id="icono" src="../medios/IMAGENES/ICO/icono2.ico" alt="icono de flechas hacia abajo"></a>	
+	</section>
+	<section style="overflow: auto;">
+		<h2 id="ellos">¿Cómo son ellos?</h2>
+		<p>La siguiente tabla proporciona una visión detallada sobre mis amigos, abarcando aspectos clave como su color favorito, lo que más les gusta y sus pasatiempos preferidos. Al observar estos elementos, se puede apreciar cómo varían sus intereses personales y las actividades que disfrutan en su tiempo libre. Desde aficiones artísticas hasta deportes o hobbies más relajados, esta información no solo resalta las diferencias entre cada individuo, sino que también ayuda a comprender mejor sus motivaciones y qué les apasiona en la vida. De esta manera, se muestra la riqueza y diversidad de sus personalidades, así como la forma en que estos factores influyen en nuestras interacciones y amistades.</p>
+		<table id="tabla_2" class="tabla_dos">
+			<thead>
+				<tr>
+					<th style="width: 200px;">Nombre</th>
+					<th style="text-align:center; padding: 0px; width: 150px;">Color favorito</th>
+					<th style="width: 200px;" colspan="2">Lo que más le gusta es:</th>
+					<th style="width: 150px;">Pasatiempo favorito</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Daniel Soriano</td>
+					<td style="text-align:center; padding: 0px;">azul marino</td>
+					<td>Jugar videojuegos</td><td>Jugar beisbol</td>
+					<td class="celda_centrado" style="background-color: #995A7F; color: #ded3fd;">Coleccionar funkos</td>
+				</tr>
+				<tr>
+					<td>Adriana Cortes</td>
+					<td style="text-align:center; padding: 0px;">lila</td>
+					<td>Dormir</td><td>Comer</td>
+					<td class="celda_centrado" style="background-color: #995A7F; color: #ded3fd;">Ver anime</td>
+				</tr>
+				<tr>
+					<td>Alan de la Cruz</td>
+					<td style="text-align:center; padding: 0px;">negro y gris</td>
+					<td>Perros</td><td>Spiderman</td>
+					<td class="celda_centrado" style="background-color: #995A7F; color: #ded3fd;">Ver películas</td>
+				</tr>
+				<tr>
+					<td>Carla Escobar</td>
+					<td style="text-align:center; padding: 0px;">azul cielo</td>
+					<td>Gatos</td><td>Vatos chichones</td>
+					<td class="celda_centrado" style="background-color: #995A7F; color: #ded3fd;">Ir al GYM</td>
+				</tr>
+				<tr>
+					<td >Dianet Barranco</td>
+					<td style="text-align:center; padding: 0px;">negro y lila</td>
+					<td>Gatos</td><td>El Mariana</td>
+					<td class="celda_centrado" style="background-color: #995A7F; color: #ded3fd;">Ver streams</td>
+				</tr>
+				<tr>
+					<td style="width: 200px;">Brenda Paez</td>
+					<td style="text-align:center; padding: 0px;">rosa</td>
+					<td>Flores</td><td>Anillos</td>
+					<td class="celda_centrado" style="background-color:#995A7F; color: #ded3fd;">Salir a tomar fotos</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<!--<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>TOTAL</td>
+					<td class="celda_centrado" style="background-color: #CE7095; color: #ffdbd7;">$480</td>
+				</tr>-->
+			</tfoot>
+		</table>
+	<a href="#menu_interno"><img id="icono" src="../medios/IMAGENES/ICO/icono2.ico" alt="icono de flechas hacia abajo"></a>	
+	</section>
+	<section style="overflow: auto;">
+		<h2 id="carrera">¿Cuál es su carrera/profesión?</h2>
+		<p>La siguiente tabla proporciona una visión detallada sobre los estudiantes, abarcando aspectos clave como sus nombres, edades, lo que estudian, sus números de teléfono y correos electrónicos. Al observar estos elementos, se puede apreciar la diversidad en sus campos de estudio, así como la organización de su información de contacto. Esta información no solo resalta las particularidades de cada estudiante, sino que también facilita una mejor comprensión de quiénes son y cómo pueden ser contactados. De esta manera, se muestra una perspectiva clara y accesible sobre ellos, destacando su perfil académico y personal.</p>
+		<table id="tabla_zebra">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Edad</th>
+					<th>¿Qué estudia?</th>
+					<th>Teléfono</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Daniel Soriano</td>
+					<td>21</td>
+					<td>Fisioterapia</td>
+					<td>222 652 6270</td>
+					<td>daniel.soriano@alumno.buap.mx</td>
+				</tr>
+				<tr>
+					<td>Adriana Cortes</td>
+					<td>20</td>
+					<td>Diseño Gráfico</td>
+					<td>221 278 7525</td>
+					<td>adriana.cortes@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Alan de la Cruz</td>
+					<td>23</td>
+					<td>Diseño Gráfico</td>
+					<td>221 435 0636</td>
+					<td>alan.ontiveros@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Carla Hernández</td>
+					<td>21</td>
+					<td>Diseño Gráfico</td>
+					<td>221 375 5020</td>
+					<td>carla.hernandez@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Dianet Barranco</td>
+					<td>21</td>
+					<td>Diseño Gráfico</td>
+					<td>222 157 7767</td>
+					<td>dianet.barranco@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Brenda Paez</td>
+					<td>21</td>
+					<td>Diseño Gráfico</td>
+					<td>222 522 5832</td>
+					<td>brenda.paez@gmail.com</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+	<a href="#menu_interno"><img id="icono" src="../medios/IMAGENES/ICO/icono2.ico" alt="icono de flechas hacia abajo"></a>	
+	</section>
+	<section style="overflow: auto;">
+		<h2 id="deporte">¿Cuál es su deporte favorito?</h2>
+		<p>La siguiente tabla ofrece un panorama detallado sobre un grupo de estudiantes, incluyendo su nombre, edad, deporte que practican o que les gusta, teléfono y correo electrónico. A través de esta información, se puede apreciar la diversidad de actividades físicas que realizan, como béisbol, danza, basquetbol y taekwondo. Estos datos no solo muestran sus preferencias deportivas, sino que también proporcionan una forma sencilla de contactarlos. En conjunto, la tabla presenta una imagen clara de sus intereses en el deporte y sus detalles personales de manera organizada.</p>
+		<table class="tabla_hover">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Edad</th>
+					<th>Deporte</th>
+					<th>Teléfono</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Daniel Soriano</td>
+					<td>21</td>
+					<td>Beisbol</td>
+					<td>222 652 6270</td>
+					<td>daniel.soriano@alumno.buap.mx</td>
+				</tr>
+				<tr>
+					<td>Adriana Cortes</td>
+					<td>20</td>
+					<td>Danza</td>
+					<td>221 278 7525</td>
+					<td>adriana.cortes@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Alan de la Cruz</td>
+					<td>23</td>
+					<td>Basquetbol</td>
+					<td>221 435 0636</td>
+					<td>alan.ontiveros@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Carla Hernández</td>
+					<td>21</td>
+					<td>Boxeo</td>
+					<td>221 375 5020</td>
+					<td>carla.hernandez@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Dianet Barranco</td>
+					<td>21</td>
+					<td>Handball</td>
+					<td>222 157 7767</td>
+					<td>dianet.barranco@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Brenda Paez</td>
+					<td>21</td>
+					<td>Taekwondo</td>
+					<td>222 522 5832</td>
+					<td>brenda.paez@gmail.com</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+	</section>
+
+	<nav id="menu_interno">
+			<ul>
+				<li><a href="#amigos">Mis amigos</a></li>
+				<li><a href="#ellos">¿Cómo son?</a></li>
+				<li><a href="#carrera">Sus carreras</a></li>
+				<li><a href="#deporte">Sus deportes</a></li>
+			</ul>
+		</nav>
+</main>
+<footer>
+	<h5>Elaborado por Celis Mendieta Karina Caridad</h5>
+</footer>
+</body>
+</html>
